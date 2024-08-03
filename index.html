@@ -1,582 +1,662 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Website Title -->
+    <title>John Doe - Professional web designer and photographer</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font-Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Lightbox -->
+	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+    <!-- Text Rotator-->
+	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
+	<!-- FlexSlider -->
+    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
+	<!-- Theme Style -->
+    <link href="css/style.css" rel="stylesheet">
+	<!-- Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+	<!-- Custom Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="assets/html5shiv/html5shiv.js"></script>
+    <script src="assets/respond/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <body id="top">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Videograph Template">
-    <meta name="keywords" content="Videograph, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Anon Rex</title>
+      <!-- ****************************** Preloader ************************** -->
+      <div id="preloader"></div>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
-
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container">
+	  	<!-- ==========================
+        HEADER SECTION 
+        =========================== -->
+        <header id="home">
+		    <!-- creative menu -->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="menu-wrap">
+				<nav class="menu">
+				    <!-- Menu Links -->
+					<div class="icon-list">
+						<a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+						<a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+						<a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
+						<a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
+						<a href="index.html#blog"><i class="fa fa-fw fa-rss"></i><span>Blog</span></a>
+						<a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+					</div>
+				</nav>
+			    </div>
+			    <button class="menu-button" id="open-button"></button><!-- menu button -->
+              </div><!--/row-->
+            </div><!--/container-->
+		  <!-- Header Image -->
+          <section class="hero" id="hero">
+            <div class="container">
+			  <!-- Slider Button (don't edit!)-->
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+                </div>
+              </div>
+			  <!-- HEADER HEADLINE -->
+              <div class="row">
+                <div class="col-md-8 col-md-offset-1 inner">
+                  <h1 class="animated fadeInDown">
+                    J<span style="color:#E04343;">o</span>hn<br/>
+                    <span>D<span style="color:#FFE800">o</span>e</span>
+                  </h1><!-- Title -->
+                  <h3 class="animated fadeInUp delay-05s"><span class="rotate">Web Designer,Photographer,3d Artist</span></h3><!-- Text Rotator -->
+                </div>
+              </div>
+			  <!-- Learn More Button -->
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
+			            <p>SEE MORE</p>
+			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
+			        </a>
+                </div>
+              </div>
+            </div>
+          </section>
+		  <!-- Header Image End -->
+        </header>
+		<!-- ==========================
+        HEADER SECTION END  
+        =========================== -->
+		
+		
+		
+		
+		<!-- ==========================
+        ABOUT SECTION  
+        =========================== -->
+        <section class="intro text-center section-padding color-bg" id="about">
+          <div class="container">
+		    <!-- WELCOME TEXT -->
             <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./portfolio.html">Portfolio</a></li>
-                                <li><a href="./services.html">Services</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="./about.html">About</a></li>
-                                        <li><a href="./portfolio.html">Portfolio</a></li>
-                                        <!-- <li><a href="./blog.html">Blog</a></li> -->
-                                        <!-- <li><a href="./blog-details.html">Blog Details</a></li> -->
-                                    </ul>
-                                </li>
-                                <!-- <li><a href="./contact.html">Contact</a></li> -->
-                            </ul>
-                        </nav>
-                        <div class="header__nav__social">
-                            <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
-                            <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
-                            <!-- <a href="#"><i class="fa fa-dribbble"></i></a> -->
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
+				<!-- about / welcome text -->
+                <p>I am enough of an artist to draw freely upon my imagination. The point is that when I see a sunset or a <a href="#">waterfall</a> or something, for a split second it's so great, because for a little bit I'm out of my brain, and it's got nothing to do with me. I'm not trying to figure it out, you know what I mean? And I wonder if I can somehow find a way to maintain that mind stillness.</p>
+              </div>
             </div>
-            <div id="mobile-menu-wrap"></div>
-        </div>
-    </header>
-    <!-- Header End -->
+          </div>
+        </section>
 
-    <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <span>For website and video editing</span>
-                                <h2>Videographer’s Portfolio</h2>
-                                <a href="#" class="primary-btn">See more about us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <span>For website and video editing</span>
-                                <h2>Videographer’s Portfolio</h2>
-                                <a href="#" class="primary-btn">See more about us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <span>For website and video editing</span>
-                                <h2>Videographer’s Portfolio</h2>
-                                <a href="#" class="primary-btn">See more about us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
 
-    <!-- Services Section Begin -->
-    <section class="services spad">
-        <div class="container">
+
+
+<!-- ==========================
+        SERVICE SECTION 
+        =========================== -->
+        <section class="features text-center section-padding" id="service">
+          <div class="container">
+        <!-- Headline -->
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="services__title">
-                        <div class="section-title">
-                            <span>Our services</span>
-                            <h2>What We do?</h2>
-                        </div>
-                        <p>If you hire a videographer of our team you will get a video professional to make a custom
-                            video for your business and, once the project is over.</p>
-                        <a href="#" class="primary-btn">View all services</a>
+              <div class="col-md-12">
+                <h1 class="arrow">I do amazing things for clients</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+          <div class="services">
+          <!-- Service Box 1 -->
+                  <div class="col-md-4 wp2 item">
+                    <div class="icon">
+                      <i class="fa fa-camera"></i><!-- Icon -->
                     </div>
+                    <h2>Photographer</h2><!-- Title -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
+                    primis in faucibus.</p><!-- Description -->
+                  </div>
+          <!-- Service Box 2 -->
+                  <div class="col-md-4 wp2 item delay-05s">
+                    <div class="icon">
+                      <i class="fa fa-desktop"></i><!-- Icon -->
+                    </div>
+                    <h2>Web Designer</h2><!-- Title -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
+                    primis in faucibus.</p><!-- Description -->
+                  </div>
+          <!-- Service Box 3 -->
+                  <div class="col-md-4 wp2 item delay-1s">
+                    <div class="icon">
+                      <i class="fa fa-cubes"></i><!-- Icon -->
+                    </div>
+                    <h2>3D Artist</h2><!-- Title -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
+                    primis in faucibus.</p><!-- Description -->
+                  </div>
+          </div>
+                  <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+		<div class="container-fluid">
+		    <!-- About 1 -->
+			<div class="row color-bg">
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/about1.png)"></div><!-- about image 1 -->
+				</div>
+				<div class="col-md-6 about-text">
+					<h6>High quality webdesign</h6><!-- headline-->
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p><br><!-- About Text 1 -->
+					<a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->			
+				</div>
+			</div>
+			<!-- About 2 -->
+			<div class="row">
+				<div class="col-md-6 about-text">
+					<h6>Professional Photography</h6><!-- Headline -->
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p><br><!-- About Text 2 -->
+					<a href="index.html#team" class="weight-outline-btn">Read more</a>	<!-- read more button  -->				
+				</div>
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/about2.png)"></div><!-- about image 2 -->
+				</div>
+			</div>
+			<!-- About 3 -->
+			<div class="row color-bg">
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/about3.png)"></div><!-- about image 3 -->
+				</div>
+				<div class="col-md-6 about-text">
+					<h6>3d modeling and animations</h6><!-- Headline-->
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p><br><!-- About Text 3 -->
+					<a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->					
+				</div>
+			</div>
+		</div>
+		<!-- ==========================
+        ABOUT SECTION END
+        =========================== -->	
+
+		
+		
+		
+		<!-- ==========================
+        PORTFOLIO SECTION
+    =========================== -->
+        <section class="swag text-center" id="portfolio">
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <h1 class="arrow">
+                Recent <span>Porojects</span>
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <div class="row row-offset-0">
+  				 
+          <!-- PORTFOLIO ITEM 1 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-01-large.jpg" data-lightbox="roadtrip" title="Project One - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-01-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  	
+  	    <!-- PORTFOLIO ITEM 2 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-02-large.jpg" data-lightbox="roadtrip" title="Project Two - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-02-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+  		<!-- PORTFOLIO ITEM 3 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-03-large.jpg" data-lightbox="roadtrip" title="Project Three - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-03-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+  		<!-- PORTFOLIO ITEM 4 -->
+          <div class="col-md-3 col-sm-6 ">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-04-large.jpg" data-lightbox="roadtrip" title="Project Four - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-04-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  	             
+          <!-- PORTFOLIO ITEM 5 -->
+          <div class="col-md-3 col-sm-6 ">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-05-large.jpg" data-lightbox="roadtrip" title="Project Five - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-05-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  	
+  	    <!-- PORTFOLIO ITEM 6 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-06-large.jpg" data-lightbox="roadtrip" title="Project Six - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-06-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+  		<!-- PORTFOLIO ITEM 7 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-07-large.jpg" data-lightbox="roadtrip" title="Project Seven - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-07-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+  		<!-- PORTFOLIO ITEM 8 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-08-large.jpg" data-lightbox="roadtrip" title="Project Eight - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-08-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+        </div><!--/row-->
+      </div><!--/.container-->
+		<!-- ==========================
+        PORTFOLIO SECTION END
+        =========================== -->
+			
+
+
+			
+		<!-- ==========================
+        CUSTOM SPACER
+        =========================== -->
+		<div class="spacer-cta text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <a href="index.html#contact" class="outline-btn">hire john doe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!-- ==========================
+        CUSTOM SPACER END
+        =========================== -->
+		
+		
+
+    <!-- ==========================
+        BLOG SECTION 
+        =========================== -->
+    <section class="text-center section-padding" id="blog">
+          <div class="container">
+        <!-- Headline -->
+        <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">My <span>little</span> blog</h1>
+              </div>
+            </div><br><br>
+      
+      <!-- Blog Slider -->
+            <div class="row">
+              <div id="blogSlider">
+                <ul class="slides">
+                  <li>
+            <!-- Blog Entry 1 -->
+                    <div class="col-md-4 wp4">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/blog1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                        </div>
+                      </div>
+            <br>
+                      <h2>Creative Minds</h2><!-- Headline -->
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description-->
+                    </div>
+          <!-- Blog Entry 2 -->
+                    <div class="col-md-4 wp4 delay-05s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/blog2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                        </div>
+                      </div>
+            <br>
+                      <h2>Creative Hearts</h2><!-- Headline -->
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description -->
+                    </div>
+          <!-- Blog Entry 3 -->
+                    <div class="col-md-4 wp4 delay-1s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/blog3.jpg"  class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                        </div>
+                      </div>
+            <br>
+                      <h2>Creative Ideas</h2><!-- Headline -->
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description-->
+                    </div>
+                  </li>
+                  <li>
+            <!-- Blog Entry 4 -->
+                    <div class="col-md-4 wp4">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/blog1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                        </div>
+                      </div>
+            <br>
+                      <h2>Creative Minds</h2><!-- Headline -->
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description -->
+                    </div>
+          <!-- Blog Entry 5 -->
+                    <div class="col-md-4 wp4 delay-05s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/blog2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                        </div>
+                      </div>
+            <br>
+                      <h2>Creative Hearts</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    </div>
+          <!-- Blog Entry 6 -->
+                    <div class="col-md-4 wp4 delay-1s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/blog3.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                        </div>
+                      </div>
+            <br>
+                      <h2>Creative Ideas</h2><!-- Headline -->
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description -->
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+    <!-- ==========================
+        BLOG SECTION END
+        =========================== -->
+    
+        
+		
+		<!-- ==========================
+        CLIENT SECTION 
+        =========================== -->
+		<div class="container-fluid">
+			<div class="row color-bg">
+				<!-- Left Image -->
+				<div class="col-md-6 nopadding features-intro-img wow fadeInLeft">
+					<div class="about-image" style="background-image:url(img/clients.png)"></div>
+				</div>
+				<!-- Clients / Testimonials -->
+				<div class="col-md-6 nopadding about-text">
+				<h6>What our clients said</h6>
+					<div id="clientSlider">
+					   <ul class="slides">
+					       <li><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>	<small>- Pete Rock, A New Tomorrow</small></p></li>
+						   <li><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>	<small>- Michael Snowden, Creativeland CEO</small></p></li>
+						  <li><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>	<small>- Tom Davis, GreenWonder</small></p>	</li>
+					   </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ==========================
+        CLIENTS SECTION END
+        =========================== -->
+		
+		
+		
+		
+		
+		<!-- ==========================
+        NEWSLETTER SECTION 
+        =========================== -->
+        <section>
+		<div class="container-fluid">
+				<div class="row color-bg">
+				    <div class="col-md-6 nopadding subscribe text-center">
+					 <h1><i class="fa fa-paper-plane"></i><span>Subscribe our Newsletter</span></h1><!-- Heading -->
+                     <form action="index.html#">
+                       <input type="text" name="" value="" placeholder="" required><!-- E-Mail -->
+                       <input type="submit" name="" value="Send"><!-- Submit Button -->
+                    </form>   
+					</div>
+					<div class="col-md-6 nopadding features-intro-img">
+						 <div class="about-image" style="background-image:url(img/newsletter.png)"></div><!-- Right Image -->
+					</div>
+				</div>
+			</div>
+        </section>
+		<!-- ==========================
+        NEWSLETTER SECTION END
+        =========================== -->
+
+		
+		
+		<!-- ==========================
+        CONTACT SECTION
+        =========================== -->
+        <section class="text-center section-padding contact-wrap" id="contact">
+		  <!-- To Top Button -->
+          <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Drop <span>me</span> a line</h1>
+              </div>
+            </div>
+            <div class="row contact-details">
+			  <!-- Adress Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
+                  <p>23 Ipsum street, New York</p>
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-1.png" alt="">
+              </div>
+			  <!-- Phone Number Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+                  <p>+12 345 6789</p>
+                </div>
+              </div>
+			  <!-- E-Mail Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+                  <p><a href="index.html#">info@themewagon.com</a></p>
+                </div>
+              </div>
+            </div>
+			<div class="row">
+			  <!-- Google Maps (Change your Settings below) -->
+			  <div class="col-md-6">
+			    <div id="googlemaps"></div>
+			  </div>
+			  <!-- Contact Form -->
+			  <div class="col-md-6 contact">
+			     <form role="form">
+				            <!-- Name -->
+                            <div class="row">
+                                <div class="col-md-6">
+								    <!-- E-Mail -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your name">
+                                    </div>
                                 </div>
-                                <h4>Motion graphics</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-2.png" alt="">
+                                <div class="col-md-6">
+								    <!-- Phone Number -->
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email address">
+                                    </div>
                                 </div>
-                                <h4>Scriptwriting and editing</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-3.png" alt="">
-                                </div>
-                                <h4>Video distribution</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
+							<!-- Message Area -->
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-4.png" alt="">
-                                </div>
-                                <h4>Video hosting</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Section End -->
-
-    <!-- Work Section Begin -->
-    <!-- <section class="work"> -->
-        <div class="work__gallery">
-            <div class="grid-sizer"></div>
-            <!-- <div class="work__item wide__item set-bg" data-setbg="img/work/work-1.jpg"> -->
-                <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i -->
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/work-2.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/work-3.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item large__item set-bg" data-setbg="img/work/work-4.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/work-5.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/work-6.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-7.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Work Section End -->
-
-    <!-- Counter Section Begin -->
-    <section class="counter">
-        <div class="container">
-            <div class="counter__content">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-1.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Compled Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item second__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-2.png" alt="">
-                                <h2 class="counter_num">1068</h2>
-                                <p>Happy clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item third__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-3.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Perspective clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item four__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-4.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Compled Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Counter Section End -->
-
-    <!-- Team Section Begin -->
-    <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
-        <div class="container">
+							<!-- Subtmit Button -->
+                            <button type="submit" class="btn btn-send">
+                                Send message
+                            </button>
+                        </form>
+			  </div>
+			</div>
+			<br>
+			<!-- Social Buttons - use font-awesome, past in what you want -->
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title team__title">
-                        <span>Nice to meet</span>
-                        <h2>OUR Team</h2>
-                    </div>
-                </div>
+              <div class="col-md-12">
+                <ul class="social-buttons">
+                  <li><a href="index.html#" class="social-btn"><i class="fa fa-dribbble"></i></a></li><!-- dribble -->
+                  <li><a href="index.html#" class="social-btn"><i class="fa fa-twitter"></i></a></li><!-- twitter -->
+                  <li><a href="index.html#" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
+				  <li><a href="index.html#" class="social-btn"><i class="fa fa-deviantart"></i></a></li><!-- deviantart -->
+				  <li><a href="index.html#" class="social-btn"><i class="fa fa-youtube"></i></a></li><!-- youtube -->
+                </ul>
+              </div>
             </div>
+          </div>
+        </section>
+		<!-- ==========================
+        CONTACT SECTION END
+        =========================== -->
+		
+		
+		
+		<!-- ==========================
+        FOOTER SECTION
+        =========================== -->
+        <footer>
+          <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--second set-bg" data-setbg="img/team/team-2.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--third set-bg" data-setbg="img/team/team-3.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--four set-bg" data-setbg="img/team/team-4.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 p-0">
-                    <div class="team__btn">
-                        <a href="#" class="primary-btn">Meet Our Team</a>
-                    </div>
-                </div>
+              <div class="col-md-12 text-center">
+                <p>All Rights Reserved. &copy; 2015 <a href="http://www.themewagon.com">ThemeWagon</a>
+              </div>
             </div>
-        </div>
-    </section>
-    <!-- Team Section End -->
+          </div>
+        </footer>
+		<!-- ==========================
+        FOOTER SECTION END
+        =========================== -->		
+		
+		
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- SmoothScroll -->           
+    <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/waypoints.min.js"></script>
+    <!-- classie.js -->
+	<script src="js/classie.js"></script>
+    <!-- FlexSlider -->
+    <script src="assets/flexslider/jquery.flexslider.js"></script>
+	<!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+	<!-- Text Rotator -->
+	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+	<!-- Lightbox.js -->
+    <script src="assets/lightbox/js/lightbox.min.js"></script>
+    <!-- Google Maps --> 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"></script>
+	<!-- Theme JavaScript Core -->
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
 
-    <!-- Latest Blog Section Begin -->
-    <section class="latest spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title center-title">
-                        <span>Our Blog</span>
-                        <h2>Blog Update</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="latest__slider owl-carousel">
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Latest Blog Section End -->
+	<!-- GOOGLE MAPS DATA -->
+    <script type="text/javascript">
+    // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+    
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 15,
+                
+                scrollwheel: false,
 
-    <!-- Call To Action Section Begin -->
-    <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="callto__text">
-                        <h2>Fresh Ideas, Fresh Moments Giving Wings to your Stories.</h2>
-                        <p>INC5000, Best places to work 2019</p>
-                        <a href="#">Start your stories</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Call To Action Section End -->
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(40.68961985411178, -74.01618003845215), // New York 
 
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__option">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="footer__option__item">
-                            <h5>About us</h5>
-                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, Videoprah is an award-winning, full-service
-                                production company specializing.</p>
-                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Who we are</h5>
-                            <ul>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Carrers</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Locations</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Our work</h5>
-                            <ul>
-                                <li><a href="#">Feature</a></li>
-                                <li><a href="#">Latest</a></li>
-                                <li><a href="#">Browse Archive</a></li>
-                                <li><a href="#">Video for web</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="footer__option__item">
-                            <h5>Newsletter</h5>
-                            <p>Videoprah is an award-winning, full-service production company specializing.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="footer__copyright__text">Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        </p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Section End -->
+                // How you would like to style the map. 
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [	{		featureType:'water',		stylers:[{color:'#F2F2F2'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#FFFFFF'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#ADADAD'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
+            };
 
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+            // Get the HTML DOM element that will contain your map 
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('googlemaps');
 
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+        }
+	
+    </script>
+	
+	<!-- TEXT ROTATOR SETTINGS -->
+    <script type="text/javascript">
+    $(".rotate").textrotator({
+      animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+      speed: 2000 // How many milliseconds until the next word show.
+    });
+    </script>
+	
+    </body>
 </html>

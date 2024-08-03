@@ -1,182 +1,64 @@
-/*  ---------------------------------------------------
-    Template Name: Dreams
-    Description: Dreams wedding template
-    Author: Colorib
-    Author URI: https://colorlib.com/
-    Version: 1.0
-    Created: Colorib
----------------------------------------------------------  */
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
 
-'use strict';
 
-(function ($) {
-
-    /*------------------
-        Preloader
-    --------------------*/
-    $(window).on('load', function () {
-        $(".loader").fadeOut();
-        $("#preloder").delay(200).fadeOut("slow");
-
-        /*------------------
-            Portfolio filter
-        --------------------*/
-        $('.portfolio__filter li').on('click', function () {
-            $('.portfolio__filter li').removeClass('active');
-            $(this).addClass('active');
-        });
-        if ($('.portfolio__gallery').length > 0) {
-            var containerEl = document.querySelector('.portfolio__gallery');
-            var mixer = mixitup(containerEl);
-        }
+/******************************************************************************************************************************
+Learn More Page Scroll
+*******************************************************************************************************************************/
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
     });
+});
 
-    /*------------------
-        Background Set
-    --------------------*/
-    $('.set-bg').each(function () {
-        var bg = $(this).data('setbg');
-        $(this).css('background-image', 'url(' + bg + ')');
-    });
+/******************************************************************************************************************************
+Menu
+*******************************************************************************************************************************/ 
+(function() {
 
-    //Masonary
-    $('.work__gallery').masonry({
-        itemSelector: '.work__item',
-        columnWidth: '.grid-sizer',
-        gutter: 10
-    });
+	var bodyEl = document.body,
+		//content = document.querySelector( '.content-wrap' ),
+		openbtn = document.getElementById( 'open-button' ),
+		closebtn = document.getElementById( 'close-button' ),
+		isOpen = false;
 
-    /*------------------
-		Navigation
-	--------------------*/
-    $(".mobile-menu").slicknav({
-        prependTo: '#mobile-menu-wrap',
-        allowParentLinks: true
-    });
+	function init() {
+		initEvents();
+	}
 
-    /*------------------
-		Hero Slider
-	--------------------*/
-    $('.hero__slider').owlCarousel({
-        loop: true,
-        dots: true,
-        mouseDrag: false,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        items: 1,
-        margin: 0,
-        smartSpeed: 1200,
-        autoHeight: false,
-        autoplay: true,
-    });
+	function initEvents() {
+		openbtn.addEventListener( 'click', toggleMenu );
+		if( closebtn ) {
+			closebtn.addEventListener( 'click', toggleMenu );
+		}
 
-    var dot = $('.hero__slider .owl-dot');
-    dot.each(function () {
-        var index = $(this).index() + 1;
-        if (index < 10) {
-            $(this).html('0').append(index);
-        } else {
-            $(this).html(index);
-        }
-    });
+		/* close the menu element if the target it´s not the menu element or one of its descendants..
+		content.addEventListener( 'click', function(ev) {
+			var target = ev.target;
+			if( isOpen && target !== openbtn ) {
+				toggleMenu();
+			}
+		} );
+		*/
+	}
 
-    /*------------------
-        Testimonial Slider
-    --------------------*/
-    $(".testimonial__slider").owlCarousel({
-        loop: true,
-        margin: 0,
-        items: 3,
-        dots: true,
-        dotsEach: 2,
-        smartSpeed: 1200,
-        autoHeight: false,
-        autoplay: true,
-        responsive: {
-            992: {
-                items: 3
-            },
-            768: {
-                items: 2
-            },
-            320: {
-                items: 1
-            }
-        }
-    });
+	function toggleMenu() {
+		if( isOpen ) {
+			classie.remove( bodyEl, 'show-menu' );
+		}
+		else {
+			classie.add( bodyEl, 'show-menu' );
+		}
+		isOpen = !isOpen;
+	}
 
-    /*------------------
-        Latest Slider
-    --------------------*/
-    $(".latest__slider").owlCarousel({
-        loop: true,
-        margin: 0,
-        items: 3,
-        dots: true,
-        dotsEach: 2,
-        smartSpeed: 1200,
-        autoHeight: false,
-        autoplay: true,
-        responsive: {
-            992: {
-                items: 3
-            },
-            768: {
-                items: 2
-            },
-            320: {
-                items: 1
-            }
-        }
-    });
+	init();
 
-    /*------------------
-        Logo Slider
-    --------------------*/
-    $(".logo__carousel").owlCarousel({
-        loop: true,
-        margin: 100,
-        items: 6,
-        dots: false,
-        smartSpeed: 1200,
-        autoHeight: false,
-        autoplay: true,
-        responsive: {
-            992: {
-                items: 5
-            },
-            768: {
-                items: 4
-            },
-            480: {
-                items: 3
-            },
-            320: {
-                items: 2
-            }
-        }
-    });
+})();
 
-    /*------------------
-        Video Popup
-    --------------------*/
-    $('.video-popup').magnificPopup({
-        type: 'iframe'
-    });
 
-    /*------------------
-        Counter
-    --------------------*/
-    $('.counter_num').each(function () {
-        $(this).prop('Counter', 0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 4000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
-
-})(jQuery);
